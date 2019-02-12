@@ -1,0 +1,6 @@
+module Pods_CellTest {
+  umbrella header "Pods-CellTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

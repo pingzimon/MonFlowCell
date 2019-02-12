@@ -8,7 +8,6 @@
 //
 
 import UIKit
-import HandyJSON
 
 let MonMulLineTableTCellID = "MonMulLineTableTCellID"
 
@@ -171,7 +170,7 @@ class MonMulLineTableTCell: UITableViewCell, UITableViewDelegate, UITableViewDat
 }
 
 
-class DetailItem: HandyJSON {
+class DetailItem {
     //左控件数据
     var title = ""
     //中控件数据

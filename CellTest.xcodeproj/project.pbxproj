@@ -161,10 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				256C3E752212EA05003AAB8C /* CollectionCell */,
-				256C3E772212EA87003AAB8C /* MulItemCCell.swift */,
-				256C3E792212EA88003AAB8C /* MulItemCCell.xib */,
-				256C3E762212EA87003AAB8C /* MulItemCollectTCell.swift */,
-				256C3E782212EA88003AAB8C /* MulItemCollectTCell.xib */,
 				256C3E742212E9EB003AAB8C /* TableCell */,
 				256C3E7022129D25003AAB8C /* source.bundle */,
 				256C3E6622126AD0003AAB8C /* CalculateFrame.swift */,
@@ -188,6 +184,10 @@
 		256C3E752212EA05003AAB8C /* CollectionCell */ = {
 			isa = PBXGroup;
 			children = (
+				256C3E772212EA87003AAB8C /* MulItemCCell.swift */,
+				256C3E792212EA88003AAB8C /* MulItemCCell.xib */,
+				256C3E762212EA87003AAB8C /* MulItemCollectTCell.swift */,
+				256C3E782212EA88003AAB8C /* MulItemCollectTCell.xib */,
 			);
 			path = CollectionCell;
 			sourceTree = "<group>";
