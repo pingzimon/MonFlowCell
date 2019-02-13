@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MonFlowCell"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "A Flow Cell that use for form"
 
   # This description is used to generate tags and improve search results.
