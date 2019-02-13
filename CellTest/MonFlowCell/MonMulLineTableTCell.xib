@@ -38,7 +38,6 @@
                                             <constraint firstAttribute="height" constant="35" id="gDh-vl-zdp"/>
                                             <constraint firstAttribute="width" constant="35" id="v64-eJ-Hru"/>
                                         </constraints>
-                                        <state key="normal" image="iconRight.png"/>
                                         <state key="selected" image="iconRight"/>
                                         <state key="highlighted" image="iconRight"/>
                                     </button>
@@ -109,6 +108,5 @@
     </objects>
     <resources>
         <image name="iconRight" width="22" height="22"/>
-        <image name="iconRight.png" width="22" height="22"/>
     </resources>
 </document>

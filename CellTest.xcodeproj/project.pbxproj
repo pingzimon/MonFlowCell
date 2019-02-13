@@ -15,18 +15,19 @@
 		2545416822114BB2002C8A82 /* CellTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2545416722114BB2002C8A82 /* CellTestTests.swift */; };
 		2545417322114BB2002C8A82 /* CellTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2545417222114BB2002C8A82 /* CellTestUITests.swift */; };
 		467AA674471D45C0B88A4598 /* libPods-CellTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0B94C2ED3F9E499E632DAC /* libPods-CellTest.a */; };
-		B8222DC1221308350071C579 /* MulItemCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8222DB5221308340071C579 /* MulItemCCell.xib */; };
-		B8222DC2221308350071C579 /* MonMulLineTableTCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8222DB6221308340071C579 /* MonMulLineTableTCell.xib */; };
 		B8222DC3221308350071C579 /* MulItemCollectTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8222DB7221308340071C579 /* MulItemCollectTCell.swift */; };
-		B8222DC4221308350071C579 /* MulItemCollectTCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8222DB8221308340071C579 /* MulItemCollectTCell.xib */; };
 		B8222DC5221308350071C579 /* MonFlowCell.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8222DB9221308340071C579 /* MonFlowCell.bundle */; };
 		B8222DC6221308350071C579 /* MonMulLineTableTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8222DBA221308340071C579 /* MonMulLineTableTCell.swift */; };
 		B8222DC7221308350071C579 /* MultiTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8222DBB221308340071C579 /* MultiTable.swift */; };
 		B8222DC8221308350071C579 /* MDMulLIneTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8222DBC221308340071C579 /* MDMulLIneTCell.swift */; };
 		B8222DC9221308350071C579 /* MonFlowCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8222DBD221308340071C579 /* MonFlowCommon.swift */; };
 		B8222DCA221308350071C579 /* CalculateFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8222DBE221308340071C579 /* CalculateFrame.swift */; };
-		B8222DCB221308350071C579 /* MDMulLIneTCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8222DBF221308340071C579 /* MDMulLIneTCell.xib */; };
 		B8222DCC221308350071C579 /* MulItemCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8222DC0221308340071C579 /* MulItemCCell.swift */; };
+		B8B0A1D92213DBB200CAA7C4 /* MonCellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B0A1D82213DBB200CAA7C4 /* MonCellManager.swift */; };
+		B8B0A1E222140D7100CAA7C4 /* MDMulLIneTCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B0A1DE22140D7100CAA7C4 /* MDMulLIneTCell.xib */; };
+		B8B0A1E322140D7100CAA7C4 /* MulItemCollectTCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B0A1DF22140D7100CAA7C4 /* MulItemCollectTCell.xib */; };
+		B8B0A1E422140D7100CAA7C4 /* MonMulLineTableTCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B0A1E022140D7100CAA7C4 /* MonMulLineTableTCell.xib */; };
+		B8B0A1E522140D7100CAA7C4 /* MulItemCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B0A1E122140D7100CAA7C4 /* MulItemCCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,18 +64,20 @@
 		5F57E1B1D389FCB65CE25199 /* Pods-CellTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CellTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CellTest/Pods-CellTest.debug.xcconfig"; sourceTree = "<group>"; };
 		6D0B94C2ED3F9E499E632DAC /* libPods-CellTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CellTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B789CF1D685D9E0942290E83 /* Pods-CellTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CellTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CellTest/Pods-CellTest.release.xcconfig"; sourceTree = "<group>"; };
-		B8222DB5221308340071C579 /* MulItemCCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MulItemCCell.xib; sourceTree = "<group>"; };
-		B8222DB6221308340071C579 /* MonMulLineTableTCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MonMulLineTableTCell.xib; sourceTree = "<group>"; };
 		B8222DB7221308340071C579 /* MulItemCollectTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulItemCollectTCell.swift; sourceTree = "<group>"; };
-		B8222DB8221308340071C579 /* MulItemCollectTCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MulItemCollectTCell.xib; sourceTree = "<group>"; };
 		B8222DB9221308340071C579 /* MonFlowCell.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MonFlowCell.bundle; sourceTree = "<group>"; };
 		B8222DBA221308340071C579 /* MonMulLineTableTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonMulLineTableTCell.swift; sourceTree = "<group>"; };
 		B8222DBB221308340071C579 /* MultiTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiTable.swift; sourceTree = "<group>"; };
 		B8222DBC221308340071C579 /* MDMulLIneTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDMulLIneTCell.swift; sourceTree = "<group>"; };
 		B8222DBD221308340071C579 /* MonFlowCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonFlowCommon.swift; sourceTree = "<group>"; };
 		B8222DBE221308340071C579 /* CalculateFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateFrame.swift; sourceTree = "<group>"; };
-		B8222DBF221308340071C579 /* MDMulLIneTCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDMulLIneTCell.xib; sourceTree = "<group>"; };
 		B8222DC0221308340071C579 /* MulItemCCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulItemCCell.swift; sourceTree = "<group>"; };
+		B8B0A1D82213DBB200CAA7C4 /* MonCellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonCellManager.swift; sourceTree = "<group>"; };
+		B8B0A1DE22140D7100CAA7C4 /* MDMulLIneTCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDMulLIneTCell.xib; sourceTree = "<group>"; };
+		B8B0A1DF22140D7100CAA7C4 /* MulItemCollectTCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MulItemCollectTCell.xib; sourceTree = "<group>"; };
+		B8B0A1E022140D7100CAA7C4 /* MonMulLineTableTCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MonMulLineTableTCell.xib; sourceTree = "<group>"; };
+		B8B0A1E122140D7100CAA7C4 /* MulItemCCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MulItemCCell.xib; sourceTree = "<group>"; };
+		B8B0A1EA221414F600CAA7C4 /* MonCell.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonCell.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8B0A1E7221414F600CAA7C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -109,6 +119,7 @@
 				2545415122114BAE002C8A82 /* CellTest */,
 				2545416622114BB2002C8A82 /* CellTestTests */,
 				2545417122114BB2002C8A82 /* CellTestUITests */,
+				B8B0A1EB221414F600CAA7C4 /* MonCell */,
 				2545415022114BAE002C8A82 /* Products */,
 				884DA84190BB465D1DF6C010 /* Pods */,
 				4A72E4F83D57173522376A01 /* Frameworks */,
@@ -121,6 +132,7 @@
 				2545414F22114BAE002C8A82 /* CellTest.app */,
 				2545416322114BB2002C8A82 /* CellTestTests.xctest */,
 				2545416E22114BB2002C8A82 /* CellTestUITests.xctest */,
+				B8B0A1EA221414F600CAA7C4 /* MonCell.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,18 +172,19 @@
 		256C3E6322126951003AAB8C /* MonFlowCell */ = {
 			isa = PBXGroup;
 			children = (
+				B8B0A1DE22140D7100CAA7C4 /* MDMulLIneTCell.xib */,
+				B8B0A1E022140D7100CAA7C4 /* MonMulLineTableTCell.xib */,
+				B8B0A1E122140D7100CAA7C4 /* MulItemCCell.xib */,
+				B8B0A1DF22140D7100CAA7C4 /* MulItemCollectTCell.xib */,
 				B8222DBE221308340071C579 /* CalculateFrame.swift */,
 				B8222DBC221308340071C579 /* MDMulLIneTCell.swift */,
-				B8222DBF221308340071C579 /* MDMulLIneTCell.xib */,
 				B8222DB9221308340071C579 /* MonFlowCell.bundle */,
 				B8222DBD221308340071C579 /* MonFlowCommon.swift */,
 				B8222DBA221308340071C579 /* MonMulLineTableTCell.swift */,
-				B8222DB6221308340071C579 /* MonMulLineTableTCell.xib */,
 				B8222DC0221308340071C579 /* MulItemCCell.swift */,
-				B8222DB5221308340071C579 /* MulItemCCell.xib */,
 				B8222DB7221308340071C579 /* MulItemCollectTCell.swift */,
-				B8222DB8221308340071C579 /* MulItemCollectTCell.xib */,
 				B8222DBB221308340071C579 /* MultiTable.swift */,
+				B8B0A1D82213DBB200CAA7C4 /* MonCellManager.swift */,
 			);
 			path = MonFlowCell;
 			sourceTree = "<group>";
@@ -191,6 +204,13 @@
 				B789CF1D685D9E0942290E83 /* Pods-CellTest.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B8B0A1EB221414F600CAA7C4 /* MonCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MonCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +270,23 @@
 			productReference = 2545416E22114BB2002C8A82 /* CellTestUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B8B0A1E9221414F600CAA7C4 /* MonCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8B0A1ED221414F600CAA7C4 /* Build configuration list for PBXNativeTarget "MonCell" */;
+			buildPhases = (
+				B8B0A1E6221414F600CAA7C4 /* Sources */,
+				B8B0A1E7221414F600CAA7C4 /* Frameworks */,
+				B8B0A1E8221414F600CAA7C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonCell;
+			productName = MonCell;
+			productReference = B8B0A1EA221414F600CAA7C4 /* MonCell.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -271,6 +308,9 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 2545414E22114BAE002C8A82;
 					};
+					B8B0A1E9221414F600CAA7C4 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 				};
 			};
 			buildConfigurationList = 2545414A22114BAE002C8A82 /* Build configuration list for PBXProject "CellTest" */;
@@ -289,6 +329,7 @@
 				2545414E22114BAE002C8A82 /* CellTest */,
 				2545416222114BB2002C8A82 /* CellTestTests */,
 				2545416D22114BB2002C8A82 /* CellTestUITests */,
+				B8B0A1E9221414F600CAA7C4 /* MonCell */,
 			);
 		};
 /* End PBXProject section */
@@ -299,12 +340,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2545415D22114BB2002C8A82 /* LaunchScreen.storyboard in Resources */,
+				B8B0A1E522140D7100CAA7C4 /* MulItemCCell.xib in Resources */,
 				B8222DC5221308350071C579 /* MonFlowCell.bundle in Resources */,
-				B8222DC1221308350071C579 /* MulItemCCell.xib in Resources */,
+				B8B0A1E422140D7100CAA7C4 /* MonMulLineTableTCell.xib in Resources */,
 				2545415A22114BB2002C8A82 /* Assets.xcassets in Resources */,
-				B8222DC4221308350071C579 /* MulItemCollectTCell.xib in Resources */,
-				B8222DC2221308350071C579 /* MonMulLineTableTCell.xib in Resources */,
-				B8222DCB221308350071C579 /* MDMulLIneTCell.xib in Resources */,
+				B8B0A1E322140D7100CAA7C4 /* MulItemCollectTCell.xib in Resources */,
+				B8B0A1E222140D7100CAA7C4 /* MDMulLIneTCell.xib in Resources */,
 				2545415822114BAE002C8A82 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +358,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2545416C22114BB2002C8A82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8B0A1E8221414F600CAA7C4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -353,6 +401,7 @@
 			files = (
 				B8222DCA221308350071C579 /* CalculateFrame.swift in Sources */,
 				2545415522114BAE002C8A82 /* ViewController.swift in Sources */,
+				B8B0A1D92213DBB200CAA7C4 /* MonCellManager.swift in Sources */,
 				B8222DC6221308350071C579 /* MonMulLineTableTCell.swift in Sources */,
 				B8222DCC221308350071C579 /* MulItemCCell.swift in Sources */,
 				B8222DC8221308350071C579 /* MDMulLIneTCell.swift in Sources */,
@@ -376,6 +425,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2545417322114BB2002C8A82 /* CellTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8B0A1E6221414F600CAA7C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +704,42 @@
 			};
 			name = Release;
 		};
+		B8B0A1EE221414F600CAA7C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 23N35Y8B34;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jinlanmeng.MonCell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B8B0A1EF221414F600CAA7C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 23N35Y8B34;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jinlanmeng.MonCell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -683,6 +775,15 @@
 			buildConfigurations = (
 				2545417E22114BB2002C8A82 /* Debug */,
 				2545417F22114BB2002C8A82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8B0A1ED221414F600CAA7C4 /* Build configuration list for PBXNativeTarget "MonCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8B0A1EE221414F600CAA7C4 /* Debug */,
+				B8B0A1EF221414F600CAA7C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

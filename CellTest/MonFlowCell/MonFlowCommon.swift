@@ -71,3 +71,6 @@ let KIphoneXBottom: CGFloat = KIsiPhoneX ?  34.0 : 0.0
 let DarkTitleColor: UIColor = {
     return RGBA(r: 68, g: 68, b: 74, a: 1.0)
 }()
+
+
+
