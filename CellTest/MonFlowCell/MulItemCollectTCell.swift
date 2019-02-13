@@ -8,13 +8,14 @@
 
 import UIKit
 
-public let MulItemCollectTCellID = "MulItemCollectTCellID"
+
 
 
 
 /// 此类支持一行最多两条信息，会自动分行，只需要指定data的数据
-class MulItemCollectTCell: UITableViewCell,UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+open class MulItemCollectTCell: UITableViewCell,UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
+    public static let CellID = "MulItemCollectTCellID"
     //xib静态下正常占位的item高度
     let DetailItemHeight: CGFloat = 23.0
     
@@ -31,7 +32,7 @@ class MulItemCollectTCell: UITableViewCell,UICollectionViewDelegate, UICollectio
     @IBOutlet weak var moreImgV: UIImageView!
     @IBOutlet weak var collectionHeight: NSLayoutConstraint!
     //是否显示阴影
-    var isShowShadow = true{
+    open var isShowShadow = true{
         didSet{
             if !isShowShadow{
                 shodowView.layer.shadowRadius = 0.0
@@ -50,7 +51,7 @@ class MulItemCollectTCell: UITableViewCell,UICollectionViewDelegate, UICollectio
     }
     
     
-    var data: [DetailItem] = []{
+    open var data: [DetailItem] = []{
         didSet{
             var totalHeight: CGFloat = 0
             for (index,item) in data.enumerated(){
@@ -143,7 +144,7 @@ class MulItemCollectTCell: UITableViewCell,UICollectionViewDelegate, UICollectio
         }
     }
     @IBOutlet weak var collection: UICollectionView!
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         collection.delegate = self
         collection.dataSource = self
@@ -158,45 +159,45 @@ class MulItemCollectTCell: UITableViewCell,UICollectionViewDelegate, UICollectio
         shodowView.layer.shadowOpacity = 1.0
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override open func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
     // MARK: - UICollectionViewDelegate
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    private func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return data.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = data[indexPath.item]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MulItemCCellID, for: indexPath) as! MulItemCCell
         cell.item = item
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    private func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let item = data[indexPath.item]
         return CGSize.init(width:item.width , height: item.height)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    private func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 10
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    private func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 10
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+    private func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
         return CGSize.zero
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+    private func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize.zero
     }
     

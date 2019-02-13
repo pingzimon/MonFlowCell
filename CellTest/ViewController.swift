@@ -145,8 +145,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     lazy var table: UITableView = {
         let table = UITableView.init(frame: CGRect.init(x: 0, y: KStatusBarH, width: KWidth, height: KHeight - KStatusBarH), style: .grouped)
-        table.register(UINib.init(nibName: "MonMulLineTableTCell", bundle: nil), forCellReuseIdentifier: MonMulLineTableTCellID)
-        table.register(UINib.init(nibName: "MulItemCollectTCell", bundle: nil), forCellReuseIdentifier: MulItemCollectTCellID)
+        table.register(UINib.init(nibName: "MonMulLineTableTCell", bundle: nil), forCellReuseIdentifier: MonMulLineTableTCell.CellID)
+        table.register(UINib.init(nibName: "MulItemCollectTCell", bundle: nil), forCellReuseIdentifier: MulItemCollectTCell.CellID)
         
         table.estimatedRowHeight = 136
         table.estimatedSectionFooterHeight = 0.0
@@ -178,7 +178,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0{
-            let cell = tableView.dequeueReusableCell(withIdentifier: MonMulLineTableTCellID, for: indexPath) as! MonMulLineTableTCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: MonMulLineTableTCell.CellID, for: indexPath) as! MonMulLineTableTCell
             cell.hasDisclourse = true
             cell.isHideShadow = false
             cell.isbackColorClear = false
@@ -187,7 +187,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return cell
         }
         else{
-            let cell = tableView.dequeueReusableCell(withIdentifier: MulItemCollectTCellID, for: indexPath) as! MulItemCollectTCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: MulItemCollectTCell.CellID, for: indexPath) as! MulItemCollectTCell
             cell.data = collectionCellData[indexPath.row]
             cell.isShowShadow = true
             cell.separatorInset = UIEdgeInsets.init(top: 0, left: (KWidth ) / 2, bottom: 0, right: (KWidth) / 2)

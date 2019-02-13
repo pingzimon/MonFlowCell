@@ -9,9 +9,7 @@
 
 import UIKit
 
-public let MonMulLineTableTCellID = "MonMulLineTableTCellID"
 
-public let RefreshTableHeightNoti = "RefreshTableHeightNoti"
 
 let contentMaxWidth: CGFloat = KWidth - 15 * 4
  
@@ -22,8 +20,11 @@ let OnelineHeight: CGFloat = 23
 
 
 /// 此类每一行显示一条信息，只需要指定data的数据，左边的标题label的内容最长度决定了整体右侧label的加载宽度
-class MonMulLineTableTCell: UITableViewCell, UITableViewDelegate, UITableViewDataSource  {
+open class MonMulLineTableTCell: UITableViewCell, UITableViewDelegate, UITableViewDataSource  {
     
+    public static let CellID = "MonMulLineTableTCellID"
+    
+    public let RefreshTableHeightNoti = "RefreshTableHeightNoti"
     @IBOutlet weak var disclourseWidth: NSLayoutConstraint!
     @IBOutlet weak var moreBtn: UIButton!
     @IBOutlet weak var radiusView: UIView!
@@ -34,9 +35,9 @@ class MonMulLineTableTCell: UITableViewCell, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var table: MultiTable!
     
     //是否有右箭头
-    var hasDisclourse: Bool = false
+    open var hasDisclourse: Bool = false
     
-    var data: [DetailItem] = []{
+    open var data: [DetailItem] = []{
         didSet{
             let item = data.first!
             var totalHeight: CGFloat = 0
@@ -88,7 +89,7 @@ class MonMulLineTableTCell: UITableViewCell, UITableViewDelegate, UITableViewDat
     }
     
     //是否显示阴影 默认false
-    var isHideShadow = false{
+    open var isHideShadow = false{
         didSet{
             if isHideShadow{
                 backShadowView.layer.shadowRadius = 0.0
@@ -104,7 +105,7 @@ class MonMulLineTableTCell: UITableViewCell, UITableViewDelegate, UITableViewDat
         }
     }
     
-    var isbackColorClear = false{
+    open var isbackColorClear = false{
         didSet{
             if isbackColorClear{
                 self.backgroundColor = UIColor.clear
@@ -115,7 +116,7 @@ class MonMulLineTableTCell: UITableViewCell, UITableViewDelegate, UITableViewDat
         }
     }
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .none
         table.delegate = self
@@ -139,17 +140,17 @@ class MonMulLineTableTCell: UITableViewCell, UITableViewDelegate, UITableViewDat
     
     
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override open func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
     //MARK:- UITableView Delegate / DataSource
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
     
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MDMulLIneTCellID, for: indexPath) as! MDMulLIneTCell
         cell.selectionStyle = .none
         let item = data[indexPath.row]
@@ -170,27 +171,26 @@ class MonMulLineTableTCell: UITableViewCell, UITableViewDelegate, UITableViewDat
 }
 
 
-class DetailItem {
+open class DetailItem {
     //左控件数据
-    var title = ""
+    open var title = ""
     //中控件数据
-    var detail = ""
+    open var detail = ""
     //右控件数据
-    var more = ""
+    open var more = ""
     //占位数据
-    var holder: String = ""
+    open var holder: String = ""
     //指定行数 默认不自动换行
-    var line: Int = 1
+    open var line: Int = 1
     
-    var width: CGFloat = 0
-    var height: CGFloat = 0
+    open var width: CGFloat = 0
+    open var height: CGFloat = 0
     
     //是否占据一行
-    var isSingleLine: Bool = false
+    open var isSingleLine: Bool = false
     //选中
-    var isChoose: Bool = false
+    open var isChoose: Bool = false
     //此item是不是空数据
-    var isFake = false
+    open var isFake = false
     
-    required init() {}
 }
