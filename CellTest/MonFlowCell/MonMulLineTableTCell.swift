@@ -130,8 +130,9 @@ open class MonMulLineTableTCell: UITableViewCell, UITableViewDelegate, UITableVi
         backShadowView.layer.shadowOffset = CGSize.init(width: 0, height: 2)
         backShadowView.layer.masksToBounds = false
         backShadowView.layer.shadowOpacity = 1.0
-        let path = Bundle.main.path(forResource: "MonFlowCell", ofType: "bundle")!.appending("/iconRight.png")
-        moreBtn.setImage(UIImage.init(contentsOfFile: path) , for: .normal)
+        let image = MonCellManager.getImageWithName("iconRight.png")
+
+        moreBtn.setImage(image , for: .normal)
     }
     
     

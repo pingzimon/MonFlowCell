@@ -11,11 +11,13 @@ import UIKit
 open class MonCellManager: NSObject {
 
     public static func xibBundle()-> Bundle{
-        return Bundle.init(url: Bundle.main.url(forResource: "MonFlowCell", withExtension: "bundle")!)!
+        let pod = Bundle(for: MonCellManager.self)
+        return Bundle.init(url: pod.url(forResource: "MonCellManager", withExtension: "bundle")!)!
     }
     
     public static func xibBundlePath()-> String{
-        return Bundle.main.path(forResource: "MonFlowCell", ofType: "bundle")!
+        let pod = Bundle(for: MonCellManager.self)
+        return pod.path(forResource: "MonCellManager", ofType: "bundle")!
     }
     public static func getImageWithName(_ name: String)-> UIImage?{
         return UIImage.init(contentsOfFile: self.xibBundlePath() + "/\(name)")
