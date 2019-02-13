@@ -171,7 +171,7 @@ open class MonMulLineTableTCell: UITableViewCell, UITableViewDelegate, UITableVi
 }
 
 
-open class DetailItem {
+ open class DetailItem: NSObject {
     //左控件数据
     open var title = ""
     //中控件数据
@@ -192,5 +192,9 @@ open class DetailItem {
     open var isChoose: Bool = false
     //此item是不是空数据
     open var isFake = false
+    
+    public override init() {
+        super.init()
+    }
     
 }
