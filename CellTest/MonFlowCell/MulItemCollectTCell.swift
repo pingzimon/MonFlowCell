@@ -8,7 +8,7 @@
 
 import UIKit
 
-let MulItemCollectTCellID = "MulItemCollectTCellID"
+public let MulItemCollectTCellID = "MulItemCollectTCellID"
 
 
 

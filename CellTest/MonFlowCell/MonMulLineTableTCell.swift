@@ -9,9 +9,9 @@
 
 import UIKit
 
-let MonMulLineTableTCellID = "MonMulLineTableTCellID"
+public let MonMulLineTableTCellID = "MonMulLineTableTCellID"
 
-let RefreshTableHeightNoti = "RefreshTableHeightNoti"
+public let RefreshTableHeightNoti = "RefreshTableHeightNoti"
 
 let contentMaxWidth: CGFloat = KWidth - 15 * 4
  
@@ -129,7 +129,7 @@ class MonMulLineTableTCell: UITableViewCell, UITableViewDelegate, UITableViewDat
         backShadowView.layer.shadowOffset = CGSize.init(width: 0, height: 2)
         backShadowView.layer.masksToBounds = false
         backShadowView.layer.shadowOpacity = 1.0
-        let path = Bundle.main.path(forResource: "source", ofType: "bundle")!.appending("/iconRight.png")
+        let path = Bundle.main.path(forResource: "MonFlowCell", ofType: "bundle")!.appending("/iconRight.png")
         moreBtn.setImage(UIImage.init(contentsOfFile: path) , for: .normal)
     }
     
