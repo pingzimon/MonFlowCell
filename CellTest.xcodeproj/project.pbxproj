@@ -16,7 +16,7 @@
 		2545417322114BB2002C8A82 /* CellTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2545417222114BB2002C8A82 /* CellTestUITests.swift */; };
 		467AA674471D45C0B88A4598 /* libPods-CellTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0B94C2ED3F9E499E632DAC /* libPods-CellTest.a */; };
 		B8222DC3221308350071C579 /* MulItemCollectTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8222DB7221308340071C579 /* MulItemCollectTCell.swift */; };
-		B8222DC5221308350071C579 /* MonFlowCell.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8222DB9221308340071C579 /* MonFlowCell.bundle */; };
+		B8222DC5221308350071C579 /* MonCellManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8222DB9221308340071C579 /* MonCellManager.bundle */; };
 		B8222DC6221308350071C579 /* MonMulLineTableTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8222DBA221308340071C579 /* MonMulLineTableTCell.swift */; };
 		B8222DC7221308350071C579 /* MultiTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8222DBB221308340071C579 /* MultiTable.swift */; };
 		B8222DC8221308350071C579 /* MDMulLIneTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8222DBC221308340071C579 /* MDMulLIneTCell.swift */; };
@@ -65,7 +65,7 @@
 		6D0B94C2ED3F9E499E632DAC /* libPods-CellTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CellTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B789CF1D685D9E0942290E83 /* Pods-CellTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CellTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CellTest/Pods-CellTest.release.xcconfig"; sourceTree = "<group>"; };
 		B8222DB7221308340071C579 /* MulItemCollectTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulItemCollectTCell.swift; sourceTree = "<group>"; };
-		B8222DB9221308340071C579 /* MonFlowCell.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MonFlowCell.bundle; sourceTree = "<group>"; };
+		B8222DB9221308340071C579 /* MonCellManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MonCellManager.bundle; sourceTree = "<group>"; };
 		B8222DBA221308340071C579 /* MonMulLineTableTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonMulLineTableTCell.swift; sourceTree = "<group>"; };
 		B8222DBB221308340071C579 /* MultiTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiTable.swift; sourceTree = "<group>"; };
 		B8222DBC221308340071C579 /* MDMulLIneTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDMulLIneTCell.swift; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 				B8B0A1DF22140D7100CAA7C4 /* MulItemCollectTCell.xib */,
 				B8222DBE221308340071C579 /* CalculateFrame.swift */,
 				B8222DBC221308340071C579 /* MDMulLIneTCell.swift */,
-				B8222DB9221308340071C579 /* MonFlowCell.bundle */,
+				B8222DB9221308340071C579 /* MonCellManager.bundle */,
 				B8222DBD221308340071C579 /* MonFlowCommon.swift */,
 				B8222DBA221308340071C579 /* MonMulLineTableTCell.swift */,
 				B8222DC0221308340071C579 /* MulItemCCell.swift */,
@@ -341,7 +341,7 @@
 			files = (
 				2545415D22114BB2002C8A82 /* LaunchScreen.storyboard in Resources */,
 				B8B0A1E522140D7100CAA7C4 /* MulItemCCell.xib in Resources */,
-				B8222DC5221308350071C579 /* MonFlowCell.bundle in Resources */,
+				B8222DC5221308350071C579 /* MonCellManager.bundle in Resources */,
 				B8B0A1E422140D7100CAA7C4 /* MonMulLineTableTCell.xib in Resources */,
 				2545415A22114BB2002C8A82 /* Assets.xcassets in Resources */,
 				B8B0A1E322140D7100CAA7C4 /* MulItemCollectTCell.xib in Resources */,
