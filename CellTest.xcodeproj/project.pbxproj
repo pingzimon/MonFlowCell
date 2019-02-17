@@ -140,6 +140,10 @@
 		2545415122114BAE002C8A82 /* CellTest */ = {
 			isa = PBXGroup;
 			children = (
+				B8B0A1DE22140D7100CAA7C4 /* MDMulLIneTCell.xib */,
+				B8B0A1E022140D7100CAA7C4 /* MonMulLineTableTCell.xib */,
+				B8B0A1E122140D7100CAA7C4 /* MulItemCCell.xib */,
+				B8B0A1DF22140D7100CAA7C4 /* MulItemCollectTCell.xib */,
 				256C3E6322126951003AAB8C /* MonFlowCell */,
 				2545415222114BAE002C8A82 /* AppDelegate.swift */,
 				2545415422114BAE002C8A82 /* ViewController.swift */,
@@ -172,10 +176,6 @@
 		256C3E6322126951003AAB8C /* MonFlowCell */ = {
 			isa = PBXGroup;
 			children = (
-				B8B0A1DE22140D7100CAA7C4 /* MDMulLIneTCell.xib */,
-				B8B0A1E022140D7100CAA7C4 /* MonMulLineTableTCell.xib */,
-				B8B0A1E122140D7100CAA7C4 /* MulItemCCell.xib */,
-				B8B0A1DF22140D7100CAA7C4 /* MulItemCollectTCell.xib */,
 				B8222DBE221308340071C579 /* CalculateFrame.swift */,
 				B8222DBC221308340071C579 /* MDMulLIneTCell.swift */,
 				B8222DB9221308340071C579 /* MonCellManager.bundle */,
@@ -711,6 +711,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 23N35Y8B34;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
@@ -729,6 +730,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 23N35Y8B34;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
