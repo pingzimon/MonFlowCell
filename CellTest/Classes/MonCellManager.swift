@@ -20,7 +20,7 @@ open class MonCellManager: NSObject {
         let pod = Bundle(for: MonCellManager.self)
         return pod.path(forResource: "MonFlowCell", ofType: "bundle")!
     }
-    public static func getImageWithName(_ name: String)-> UIImage?{
+    public static func imageXibBundlePath(_ name: String)-> UIImage?{
         return UIImage.init(contentsOfFile: self.xibBundlePath() + "/\(name)")
     }
     
