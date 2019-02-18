@@ -29,6 +29,8 @@
 		B8B0A1E522140D7100CAA7C4 /* MulItemCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B0A1E122140D7100CAA7C4 /* MulItemCCell.xib */; };
 		B8CD500A221A4875002000BA /* iconRight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CD5008221A4875002000BA /* iconRight@3x.png */; };
 		B8CD500B221A4875002000BA /* iconRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CD5009221A4875002000BA /* iconRight@2x.png */; };
+		B8CD500F221A5AF2002000BA /* SampleCollectCell.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CD500D221A5AF2002000BA /* SampleCollectCell.png */; };
+		B8CD5010221A5AF2002000BA /* SampleTablecell.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CD500E221A5AF2002000BA /* SampleTablecell.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		B8B0A1EA221414F600CAA7C4 /* MonCell.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonCell.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CD5008221A4875002000BA /* iconRight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconRight@3x.png"; sourceTree = "<group>"; };
 		B8CD5009221A4875002000BA /* iconRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconRight@2x.png"; sourceTree = "<group>"; };
+		B8CD500D221A5AF2002000BA /* SampleCollectCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SampleCollectCell.png; sourceTree = "<group>"; };
+		B8CD500E221A5AF2002000BA /* SampleTablecell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SampleTablecell.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,7 @@
 		2545415122114BAE002C8A82 /* CellTest */ = {
 			isa = PBXGroup;
 			children = (
+				B8CD500C221A5ADD002000BA /* Pic */,
 				B8CD5007221A481B002000BA /* Assets */,
 				256C3E6322126951003AAB8C /* Classes */,
 				2545415222114BAE002C8A82 /* AppDelegate.swift */,
@@ -222,6 +227,15 @@
 				B8CD5008221A4875002000BA /* iconRight@3x.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		B8CD500C221A5ADD002000BA /* Pic */ = {
+			isa = PBXGroup;
+			children = (
+				B8CD500D221A5AF2002000BA /* SampleCollectCell.png */,
+				B8CD500E221A5AF2002000BA /* SampleTablecell.png */,
+			);
+			path = Pic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,8 +364,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8CD500F221A5AF2002000BA /* SampleCollectCell.png in Resources */,
 				2545415D22114BB2002C8A82 /* LaunchScreen.storyboard in Resources */,
 				B8B0A1E522140D7100CAA7C4 /* MulItemCCell.xib in Resources */,
+				B8CD5010221A5AF2002000BA /* SampleTablecell.png in Resources */,
 				B8B0A1E422140D7100CAA7C4 /* MonMulLineTableTCell.xib in Resources */,
 				B8CD500B221A4875002000BA /* iconRight@2x.png in Resources */,
 				2545415A22114BB2002C8A82 /* Assets.xcassets in Resources */,
