@@ -140,12 +140,13 @@ open class MulItemCollectTCell: UITableViewCell,UICollectionViewDelegate, UIColl
             collection.reloadData()
         }
     }
+    
     @IBOutlet weak var collection: UICollectionView!
     override open func awakeFromNib() {
         super.awakeFromNib()
         collection.delegate = self
         collection.dataSource = self
-        collection.register(UINib.init(nibName: "MulItemCCell", bundle: nil), forCellWithReuseIdentifier: MulItemCCellID)
+        collection.register(UINib.init(nibName: "MulItemCCell", bundle: MonCellManager.xibBundleWithClass(className: self.classForCoder)), forCellWithReuseIdentifier: MulItemCCellID)
         collection.bounces = false
         collection.showsVerticalScrollIndicator = false
         self.selectionStyle = .none

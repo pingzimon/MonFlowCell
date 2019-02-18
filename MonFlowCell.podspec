@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MonFlowCell"
-  s.version      = "0.1.0"
-  s.summary      = "A Flow Cell that use for form \n Latest version is 0.1.0"
+  s.version      = "0.1.1"
+  s.summary      = "A Flow Cell that use for form"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "CellTest/MonFlowCell/*"
+  s.source_files  = "CellTest/Classes/*"
   # s.exclude_files = "Classes/Exclude"
   s.swift_version = "4.2"
   # s.public_header_files = "Classes/**/*.h"
@@ -104,7 +104,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resources = "CellTest/MonFlowCell/MonCellManager.bundle"
+  s.resources = "CellTest/Assets/*"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

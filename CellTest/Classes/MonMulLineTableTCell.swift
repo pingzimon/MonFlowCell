@@ -123,7 +123,7 @@ open class MonMulLineTableTCell: UITableViewCell, UITableViewDelegate, UITableVi
         table.dataSource = self
         table.tableHeaderView = UIView()
         table.bounces = false
-        table.register(UINib.init(nibName: "MDMulLIneTCell", bundle: nil), forCellReuseIdentifier: MDMulLIneTCellID)
+        table.register(UINib.init(nibName: "MDMulLIneTCell", bundle: MonCellManager.xibBundleWithClass(className: self.classForCoder)), forCellReuseIdentifier: MDMulLIneTCellID)
         table.estimatedRowHeight = 100
         radiusView.layer.masksToBounds = true
         radiusView.layer.cornerRadius = 4.0
