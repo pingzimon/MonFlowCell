@@ -104,7 +104,9 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resources = "CellTest/Assets/*"
+  s.resource_bundles = {
+  'MonFlowCell' => ['CellTest/Assets/*']
+} 
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
